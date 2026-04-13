@@ -1,0 +1,9 @@
+{
+  "name": "ship-gate",
+  "description": "Pre-production audit skill. Scans your codebase across 8 categories (security, database, deployment, code quality, AI/LLM, dependencies, frontend, observability) and blocks shipping until critical issues are fixed. Stack-agnostic.",
+  "version": "1.0.0",
+  "author": "Rajaraman Arumugam",
+  "license": "MIT",
+  "homepage": "https://github.com/rx4u/ship-gate",
+  "skills": ["ship-gate"]
+}
