@@ -9,13 +9,16 @@ Pre-production audit skill for Claude Code. Scans your codebase across
 
 ## Why
 
-I ship solo. No QA team, no DevOps, no second pair of eyes.
+Shipping solo means no pull request reviews, no pre-deploy sign-off,
+no one to catch the exposed API key or the Supabase table with RLS
+disabled before it hits production.
 
-So I built a Claude Code skill that acts as my pre-production gate before
-anything touches production. It scans the codebase, flags what is broken,
-and blocks the deploy until I acknowledge every critical issue.
+Ship gate is a pre-deploy scanner. It covers 8 categories: security,
+database, deployment, code quality, dependencies, AI/LLM, frontend,
+and observability. Flags what is broken. Blocks the deploy until you
+fix it.
 
-The post-launch patch costs 10x more than the pre-launch fix.
+89 checks. No external dependencies. Runs in seconds.
 
 ---
 
@@ -148,15 +151,6 @@ remediation guidance.
 
 ---
 
-## Sources and Inspiration
-
-This skill consolidates best practices from:
-- [ship-safe](https://github.com/asamassekou10/ship-safe) (security scanning patterns)
-- [Mercari production-readiness-checklist](https://github.com/mercari/production-readiness-checklist) (deployment and observability)
-- [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist) (frontend quality)
-- [OWASP Top 10 2025](https://owasp.org/Top10/) (security categorization)
-
----
 
 ## License
 
